@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+}
+
+.container-formulario {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-background); 
+    border-radius: 0.4rem;
+    box-shadow: 0 2rem 3rem rgb(132, 139, 200, 0.18);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.formulario:hover {
+    box-shadow: none;
+}
+
+.formulario .campo input {
+    width: 21rem;
+    padding: 0.4rem;
+    border-radius: var(--border-radius-1);
+    background-color: #d0cdffba;
+    color: var(--color-dark);
+    font-size: 1.05rem;
+    border: 1.2px solid var(--color-primary);
+}
+
+.formulario > div > .none {
+    color: var(--color-info-dark);
+    cursor: default;
+    transition: all ease 300ms;
+}
+
+.container-btn {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn {
+    color: white;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-submit {
+    background-color: var(--color-primary);
+}
+
+.btn-cancelar {
+    background-color: var(--color-danger);
+    margin: 0;
+}
